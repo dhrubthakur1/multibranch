@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                echo "Test... branch"
+                echo "Test... ${BRANCH_NAME}   ${BUILD_NUMBER}  ${JOB_NAME}"
             }
         }
     }
